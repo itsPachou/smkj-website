@@ -1,0 +1,42 @@
+/* #3b769f */
+
+/* #imgBrandLogo {
+    padding-left: 5%;
+    padding-right: 65%;
+} */
+
+/* body {
+    padding-left: 0px;
+    padding-right: 0px;
+} */
+
+body {
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 200;
+}
+
+nav {
+    font-weight: 800;
+}
+
+.textBoxes {
+    background-color: #3b769f!important;
+    font-size: 1.4rem;
+}
+
+h1 {
+    font-weight: 600;
+}
+
+#miniatureNavLogo {
+    height: 50px;
+}
+
+#more {
+    display: none;
+}
+
+/* .logoBackgroundLeft {
+    background-image: url(smkj_logo_side_left.png);
+    background-size: cover;
+} */
