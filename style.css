@@ -1,14 +1,5 @@
 /* #3b769f */
-
-/* #imgBrandLogo {
-    padding-left: 5%;
-    padding-right: 65%;
-} */
-
-/* body {
-    padding-left: 0px;
-    padding-right: 0px;
-} */
+/* #f1f4f6 */
 
 body {
     font-family: 'Open Sans', sans-serif;
@@ -20,7 +11,7 @@ nav {
 }
 
 .textBoxes {
-    background-color: #3b769f!important;
+    background-color: #f1f4f6!important;
     font-size: 1.4rem;
 }
 
@@ -32,11 +23,53 @@ h1 {
     height: 50px;
 }
 
-#more {
+#emblemLogo {
+    height: 100px;
+}
+
+.btnReadMore {
+    border-color: #3b769f;
+    font-weight: 400;
+    color: #3b769f;
+}
+
+.btnReadMore:hover {
+    background-color: #3b769f;
+    color: white;
+}
+
+#onasMore {
     display: none;
 }
 
-/* .logoBackgroundLeft {
-    background-image: url(smkj_logo_side_left.png);
-    background-size: cover;
-} */
+#kontaktMore {
+    display: none;
+}
+
+#statutMore {
+    display: none;
+}
+
+#zarzadMore {
+    display: none;
+}
+
+#radaMore {
+    display: none;
+}
+
+#footerSection {
+    margin-top: 20px;
+    background-color: #24292e;
+}
+.footerText {
+    color: #ffffffb3;
+}
+.footerLink {
+    text-decoration: none;
+    color: #ffffffb3;
+}
+.footerLink:hover {
+    text-decoration: underline;
+    color: #eeeeeeb3;
+}
