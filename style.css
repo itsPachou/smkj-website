@@ -12,7 +12,13 @@ nav {
 
 .textBoxes {
     background-color: #f1f4f6!important;
-    font-size: 1.4rem;
+}
+
+@media (min-width: 0px) {
+    .textBoxes{font-size: 1.2rem;}
+}
+@media (min-width: 768px) {
+    .textBoxes{font-size: 1.4rem;}
 }
 
 h1 {
@@ -58,8 +64,16 @@ h1 {
     display: none;
 }
 
+.kontaktLink {
+    color: #343a40;
+    text-decoration: none;
+}
+.kontaktLink:hover {
+    color: #232930;
+    text-decoration: underline;
+}
+
 #footerSection {
-    margin-top: 20px;
     background-color: #24292e;
 }
 .footerText {

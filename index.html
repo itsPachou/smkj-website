@@ -12,41 +12,35 @@
 </head>
 <body>
     <section id="brandSection" class="container-fluid px-3">
-        <div class="row align-items-left">
-            <div class="col-8 col-lg-5 col-xl-4">
+        <div class="row">
+            <div class="col-9 col-lg-6 col-xl-5">
                 <img src="smkj_logo_top.png" id="imgBrandLogo" class="img-fluid" alt="Logo Stowarzyszenia Mieszkańców">
             </div>
-            <div class="col-4 col-lg-7 col-xl-8">
-                <!--  -->
+            <div class="col-3 col-lg-6 col-xl-7 px-0 mx-0">
+                <nav class="navbar navbar-expand-lg navbar-light my-0 d-flex justify-content-end">
+                    <!-- <a class="navbar-brand d-lg-none" href="#"><img src="smkj_logo_nasz_konstancin.png" id="miniatureNavLogo" alt="Miniature navigation logo"></a> -->
+                    <button class="navbar-toggler mt-3 mt-md-4" type="button" data-toggle="collapse" data-target="#navbarCollapsingContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse mt-lg-3 mt-xl-4 px-0 mx-0" id="navbarCollapsingContent">
+                        <ul class="navbar-nav w-100 justify-content-end px-0 mx-0">
+                            <li class="nav-item mr-xl-4"><a class="nav-link" href="#" onclick="smoothScroll(document.getElementById('onasContentSection'))">O nas</a></li>
+                            <li class="nav-item mr-xl-4"><a class="nav-link" href="#" onclick="smoothScroll(document.getElementById('kontaktContentSection'))">Kontakt</a></li>
+                            <li class="nav-item mr-xl-4"><a class="nav-link" href="#" onclick="smoothScroll(document.getElementById('kontaktContentSection'))">Zarząd</a></li>
+                            <li class="nav-item mr-xl-4"><a class="nav-link" href="#" onclick="smoothScroll(document.getElementById('statutContentSection'))">Statut</a></li>
+                            <li class="nav-item mr-xl-4"><a class="nav-link" href="#" onclick="smoothScroll(document.getElementById('radaContentSection'))">Rada konsultacyjna</a></li>
+                        </ul>
+                    </div>
+                </nav>
             </div>
         </div>
     </section>
-    
-    <section id="navbarSection" class="container-fluid">
-        <hr>
-        <nav class="navbar navbar-expand-lg navbar-light py-0 my-0">
-            <a class="navbar-brand d-lg-none" href="#"><img src="smkj_logo_nasz_konstancin.png" id="miniatureNavLogo" alt="Miniature navigation logo"></a>
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapsingContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarCollapsingContent">
-                <ul class="navbar-nav w-100 nav-justified">
-                    <li class="nav-item"><a class="nav-link" href="#" onclick="smoothScroll(document.getElementById('onasContentSection'))">O nas</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#" onclick="smoothScroll(document.getElementById('kontaktContentSection'))">Kontakt</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#" onclick="smoothScroll(document.getElementById('statutContentSection'))">Statut</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#" onclick="smoothScroll(document.getElementById('zarzadContentSection'))">Zarząd</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#" onclick="smoothScroll(document.getElementById('radaContentSection'))">Rada konsultacyjna</a></li>
-                </ul>
-            </div>
-        </nav>
-        <hr>
-    </section>
 <!-- O nas -->
-    <section class="container-fluid" id="onasContentSection">
+    <section class="container-fluid mb-lg-4" id="onasContentSection">
         <div class="row align-items-center">
-            <div class="col-lg-9 py-3 textBoxes">
+            <div class="col-lg-9 py-3 textBoxes border border-left-0">
                 <div class="row justify-content-center">
-                    <div class="col-md-8 col-lg-10">
+                    <div class="col-11 col-md-8 col-lg-10">
                         <!-- Card Title -->
                         <h1>O nas</h1>
                         <!-- Card Text -->
@@ -66,62 +60,36 @@
             </div>
         </div>
     </section>
-<!-- Kontakt -->
-    <section class="container-fluid" id="kontaktContentSection">
-        <div class="row align-items-center">
-            <div class="col-lg-9 order-1 order-lg-2 py-3 textBoxes">
+<!-- Kontakt/Zarzad -->
+    <section class="container-fluid mb-lg-4" id="kontaktContentSection">
+        <div class="row d-flex justify-content-center align-items-center">
+            <div class="col-12 col-lg-6 col-xl-5 justify-content-center">
                 <div class="row justify-content-center">
-                    <div class="col-md-8 col-lg-10">
-                        <!-- Card Title -->
-                        <h1>Kontakt</h1>
-                        <!-- Card Text -->
-                        <p class="text-dark text-justify">Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia corrupti dignissimos similique error repudiandae in nesciunt at officiis, obcaecati harum dolore quis accusamus reiciendis sunt delectus quam recusandae, sapiente veritatis. Temporibus in eveniet aut. Nam mollitia ducimus sint tenetur suscipit in fugiat omnis, dolorem expedita nobis numquam cum officia amet.
-                        <span id="kontaktDots">...</span>
-                        <span id="kontaktMore">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex, soluta.</span>
-                        </p>
-                        <button onclick="kontaktReadMore()" type="button" id="kontaktBtn" class="btn btnReadMore">Pokaż więcej</button>
+                    <div class="col-10 col-lg-9 col-xl-8 py-3 border textBoxes">
+                        <div class="row justify-content-center">
+                            <div class="col-11 col-md-8 col-lg-10 col-xl-11">
+                                <!-- Card Title -->
+                                <h1 class="mb-4">Kontakt</h1>
+                                <!-- Card Text -->
+                                <p class="mt-4"><a class="kontaktLink" href="https://www.facebook.com/pages/category/Non-Governmental-Organization--NGO-/Stowarzyszenie-Mieszka%C5%84c%C3%B3w-Konstancina-Jeziorny-Nasz-Konstancin-104018204784011/"><i class="fab fa-facebook-square"></i> Nasz Facebook</a></p>
+                                <p class="text-dark"><i class="far fa-envelope"></i> E-mail: biuro@smkj.pl</p>
+                                <p class="text-dark"><i class="fas fa-phone-square"></i> +48 795 354 141</p>
+                                <p class="text-dark">
+                                <!-- <span id="kontaktDots">...</span> -->
+                                <!-- <span id="kontaktMore">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex, soluta.</span> -->
+                                </p>
+                                <button onclick="kontaktReadMore()" type="button" id="kontaktBtn" class="btn btnReadMore">Pokaż więcej</button>
+                            </div>
+                        </div>
                     </div>
                 </div>
-            </div>
-            <div class="col-lg-3 order-2 order-lg-1 d-flex justify-content-lg-start justify-content-center px-0">
-                <!-- Half logo image -->
-                <img src="smkj_logo_side_right_sm.png" class="d-none d-lg-block img-fluid" alt="logo smkj">
-                <!-- Miniature logo at smaller viewports -->
-                <img src="smkj_logo.png" id="emblemLogo" class="d-lg-none" alt="Logo miniature">
-            </div>
-        </div>
-    </section>
-<!-- Statut -->
-    <section class="container-fluid" id="statutContentSection">
-        <div class="row align-items-center">
-            <div class="col-lg-9 py-3 textBoxes">
-                <div class="row justify-content-center">
-                    <div class="col-md-8 col-lg-10">
-                        <!-- Card Title -->
-                        <h1>Statut</h1>
-                        <!-- Card Text -->
-                        <p class="text-dark text-justify">Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia corrupti dignissimos similique error repudiandae in nesciunt at officiis, obcaecati harum dolore quis accusamus reiciendis sunt delectus quam recusandae, sapiente veritatis. Temporibus in eveniet aut. Nam mollitia ducimus sint tenetur suscipit in fugiat omnis, dolorem expedita nobis numquam cum officia amet.
-                        <span id="statutDots">...</span>
-                        <span id="statutMore">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex, soluta.</span>
-                        </p>
-                        <button onclick="statutReadMore()" type="button" id="statutBtn" class="btn btnReadMore">Pokaż więcej</button>
-                    </div>
+                <div class="d-flex justify-content-center">
+                        <img src="smkj_logo.png" id="emblemLogo" class="d-lg-none" alt="Logo miniature">
                 </div>
             </div>
-            <div class="col-lg-3 d-flex justify-content-lg-end justify-content-center px-0">
-                <!-- Half logo image -->
-                <img src="smkj_logo_side_left_sm.png" class="d-none d-lg-block img-fluid" alt="logo smkj">
-                <!-- Miniature logo at smaller viewports -->
-                <img src="smkj_logo.png" id="emblemLogo" class="d-lg-none" alt="Logo miniature">
-            </div>
-        </div>
-    </section>
-<!-- Zarzad -->
-    <section class="container-fluid" id="zarzadContentSection">
-        <div class="row align-items-center">
-            <div class="col-lg-9 order-1 order-lg-2 py-3 textBoxes">
+            <div class="col-lg-6 col-xl-7 d-flex textBoxes border border-right-0 justify-content-center py-3">
                 <div class="row justify-content-center">
-                    <div class="col-md-8 col-lg-10">
+                    <div class="col-11 col-md-8 col-lg-10">
                         <!-- Card Title -->
                         <h1>Zarząd</h1>
                         <!-- Card Text -->
@@ -133,7 +101,30 @@
                     </div>
                 </div>
             </div>
-            <div class="col-lg-3 order-2 order-lg-1 d-flex justify-content-lg-start justify-content-center px-0">
+            <div class="d-flex justify-content-center">
+                <!-- Miniature logo at smaller viewports -->
+                <img src="smkj_logo.png" id="emblemLogo" class="d-lg-none" alt="Logo miniature">
+            </div>
+        </div>
+    </section>
+<!-- Statut -->
+    <section class="container-fluid mb-lg-4" id="statutContentSection">
+        <div class="row align-items-center">
+            <div class="col-lg-9 py-3 textBoxes border border-right-0 order-1 order-lg-2">
+                <div class="row justify-content-center">
+                    <div class="col-11 col-md-8 col-lg-10">
+                        <!-- Card Title -->
+                        <h1>Statut</h1>
+                        <!-- Card Text -->
+                        <p class="text-dark text-justify">Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia corrupti dignissimos similique error repudiandae in nesciunt at officiis, obcaecati harum dolore quis accusamus reiciendis sunt delectus quam recusandae, sapiente veritatis. Temporibus in eveniet aut. Nam mollitia ducimus sint tenetur suscipit in fugiat omnis, dolorem expedita nobis numquam cum officia amet.
+                        <span id="statutDots">...</span>
+                        <span id="statutMore">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex, soluta.</span>
+                        </p>
+                        <button onclick="statutReadMore()" type="button" id="statutBtn" class="btn btnReadMore">Pokaż więcej</button>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-3 d-flex order-2 order-lg-1 justify-content-lg-start justify-content-center px-0">
                 <!-- Half logo image -->
                 <img src="smkj_logo_side_right_sm.png" class="d-none d-lg-block img-fluid" alt="logo smkj">
                 <!-- Miniature logo at smaller viewports -->
@@ -141,12 +132,13 @@
             </div>
         </div>
     </section>
+
 <!-- Rada konsultacyjna -->
-    <section class="container-fluid" id="radaContentSection">
-        <div class="row align-items-center">
-            <div class="col-lg-9 py-3 textBoxes">
+    <section class="container-fluid mb-lg-4" id="radaContentSection">
+        <div class="row align-items-center justify-content-center">
+            <div class="col-sm-11 col-lg-20 py-3 border textBoxes">
                 <div class="row justify-content-center">
-                    <div class="col-md-8 col-lg-10">
+                    <div class="col-11 col-md-8 col-lg-10">
                         <!-- Card Title -->
                         <h1>Rada konsultacyjna</h1>
                         <!-- Card Text -->
@@ -158,34 +150,32 @@
                     </div>
                 </div>
             </div>
-            <div class="col-lg-3 d-flex justify-content-lg-end justify-content-center px-0">
-                <!-- Half logo image -->
-                <img src="smkj_logo_side_left_sm.png" class="d-none d-lg-block img-fluid" alt="logo smkj">
+            <div class="d-flex justify-content-center px-0">
                 <!-- Miniature logo at smaller viewports -->
                 <img src="smkj_logo.png" id="emblemLogo" class="d-lg-none" alt="Logo miniature">
             </div>
         </div>
     </section>
 <!-- footer -->
-    <section class="container-fluid pb-5 pt-2" id="footerSection">
+    <section class="container-fluid mt-lg-4 pb-5 pt-2" id="footerSection">
         <div class="row d-flex justify-content-start">
             <div class="col-md-6">
                 <img src="smkj_logo_footer.png" alt="SMKJ logo" class="img-fluid">
             </div>
         </div>
         <div class="row d-flex justify-content-around">
-            <div class="col-10 col-md-4 footerText">
+            <div class="col-10 col-sm-5 col-md-4 footerText">
                 <p><a class="footerLink" onclick="topFunction()" href="#">Zabierz mnie na górę</a></p>
                 <p><a class="footerLink" href="https://www.facebook.com/pages/category/Non-Governmental-Organization--NGO-/Stowarzyszenie-Mieszka%C5%84c%C3%B3w-Konstancina-Jeziorny-Nasz-Konstancin-104018204784011/"><i class="fab fa-facebook-square"></i> Nasz Facebook</a></p>
                 <p><i class="far fa-envelope"></i> E-mail: biuro@smkj.pl</p>
-                <p><i class="fas fa-phone-square"></i> +48 123 456 789</p>
+                <p><i class="fas fa-phone-square"></i> +48 795 354 141</p>
             </div>
-            <div class="col-10 col-md-4 footerText"> 
-                <p><i class="fas fa-arrow-alt-circle-up"></i>  <a class="footerLink" href="#" onclick="smoothScroll(document.getElementById('onasContentSection'))">O nas</a></p>
-                <p><i class="fas fa-arrow-alt-circle-up"></i>  <a class="footerLink" href="#" onclick="smoothScroll(document.getElementById('kontaktContentSection'))">Kontakt</a></p>
-                <p><i class="fas fa-arrow-alt-circle-up"></i>  <a class="footerLink" href="#" onclick="smoothScroll(document.getElementById('statutContentSection'))">Statut</a></p>
-                <p><i class="fas fa-arrow-alt-circle-up"></i>  <a class="footerLink" href="#" onclick="smoothScroll(document.getElementById('zarzadContentSection'))">Zarząd</a></p>
-                <p><i class="fas fa-arrow-alt-circle-up"></i>  <a class="footerLink" href="#" onclick="smoothScroll(document.getElementById('radaContentSection'))">Rada konsultacyjna</a></p>
+            <div class="col-10 col-sm-5 col-md-4 footerText"> 
+                <p><a class="footerLink" href="#" onclick="smoothScroll(document.getElementById('onasContentSection'))">O nas</a></p>
+                <p><a class="footerLink" href="#" onclick="smoothScroll(document.getElementById('kontaktContentSection'))">Kontakt</a></p>
+                <p><a class="footerLink" href="#" onclick="smoothScroll(document.getElementById('statutContentSection'))">Statut</a></p>
+                <p><a class="footerLink" href="#" onclick="smoothScroll(document.getElementById('zarzadContentSection'))">Zarząd</a></p>
+                <p><a class="footerLink" href="#" onclick="smoothScroll(document.getElementById('radaContentSection'))">Rada konsultacyjna</a></p>
             </div>
         </div>
     </section>
