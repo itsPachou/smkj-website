@@ -1,10 +1,11 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pl">
 <head>
     <meta charset="UTF-8">
     <meta name="author" content="Kacper Bziuk">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
-    <title>SMKJ</title>
+    <link rel="icon" href="favicon.png" sizes="32x32" type="image/png">
+    <title>Stowarzyszenie Mieszkańców Konstancina Jeziorny "Nasz Konstancin"</title>
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
     <link rel="stylesheet" href="bootstrap.min.css">
@@ -13,40 +14,62 @@
 <body>
     <section id="brandSection" class="container-fluid px-3">
         <div class="row">
-            <div class="col-9 col-lg-6 col-xl-5">
+            <div class="col-md-9 col-lg-5 col-xl-5 px-0">
                 <img src="smkj_logo_top.png" id="imgBrandLogo" class="img-fluid" alt="Logo Stowarzyszenia Mieszkańców">
             </div>
-            <div class="col-3 col-lg-6 col-xl-7 px-0 mx-0">
-                <nav class="navbar navbar-expand-lg navbar-light my-0 d-flex justify-content-end">
+            <div class="col-md-3 col-lg-7 col-xl-7 px-0 mx-0">
+                <nav class="navbar navbar-expand-lg navbar-light pl-lg-0 my-0 d-flex justify-content-end">
                     <!-- <a class="navbar-brand d-lg-none" href="#"><img src="smkj_logo_nasz_konstancin.png" id="miniatureNavLogo" alt="Miniature navigation logo"></a> -->
                     <button class="navbar-toggler mt-3 mt-md-4" type="button" data-toggle="collapse" data-target="#navbarCollapsingContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                         <span class="navbar-toggler-icon"></span>
                     </button>
                     <div class="collapse navbar-collapse mt-lg-3 mt-xl-4 px-0 mx-0" id="navbarCollapsingContent">
                         <ul class="navbar-nav w-100 justify-content-end px-0 mx-0">
-                            <li class="nav-item mr-xl-4"><a class="nav-link" href="#" onclick="smoothScroll(document.getElementById('onasContentSection'))">O nas</a></li>
-                            <li class="nav-item mr-xl-4"><a class="nav-link" href="#" onclick="smoothScroll(document.getElementById('kontaktContentSection'))">Kontakt</a></li>
-                            <li class="nav-item mr-xl-4"><a class="nav-link" href="#" onclick="smoothScroll(document.getElementById('kontaktContentSection'))">Zarząd</a></li>
-                            <li class="nav-item mr-xl-4"><a class="nav-link" href="#" onclick="smoothScroll(document.getElementById('statutContentSection'))">Statut</a></li>
-                            <li class="nav-item mr-xl-4"><a class="nav-link" href="#" onclick="smoothScroll(document.getElementById('radaContentSection'))">Rada konsultacyjna</a></li>
+                            <li class="nav-item mx-lg-0 mr-xl-3"><a class="nav-link" href="#" onclick="smoothScroll(document.getElementById('onasContentSection'))">O nas</a></li>
+                            <li class="nav-item mx-lg-0 mr-xl-3"><a class="nav-link" href="#" onclick="smoothScroll(document.getElementById('kontaktContentSection'))">Kontakt</a></li>
+                            <li class="nav-item mx-lg-0 mr-xl-3"><a class="nav-link" href="#" onclick="smoothScroll(document.getElementById('kontaktContentSection'))">Zarząd</a></li>
+                            <li class="nav-item mx-lg-0 mr-xl-3"><a class="nav-link" href="#" onclick="smoothScroll(document.getElementById('statutContentSection'))">Statut</a></li>
+                            <li class="nav-item mx-lg-0 mr-xl-3"><a class="nav-link" href="#" onclick="smoothScroll(document.getElementById('radaContentSection'))">Rada konsultacyjna</a></li>
+                            <li class="nav-item mx-lg-0 mr-xl-3"><a class="nav-link" href="#" onclick="smoothScroll(document.getElementById('czlonekContentSection'))">Członkostwo</a></li>
                         </ul>
                     </div>
                 </nav>
             </div>
         </div>
     </section>
+<!-- Widget powietrze -->
+<section class="container-fluid">
+    <div class="row d-flex justify-content-center">
+        <div class="col-xl-4 col-lg-5 col-md-8 col-10 d-flex align-items-center justify-content-center">
+            <p id="jakoscText" class="mb-0 textBoxes">Jakość powietrza w Konstancinie</p>
+        </div>
+        <div class="col-xl-8 col-lg-7 col-md-8 col-11 d-flex justify-content-around">
+            <!-- Airly Widget Begin -->
+            <script src="https://airly.org/map/airly.js" type="text/javascript"></script>
+            <iframe id="airly_328898869" src="https://airly.org/map/widget.html#w=280&h=380&i=true&ah=true&aw=true&l=pl&us=metric&ut=celsius&lat=52.080625&lng=21.111186&id=2054" style="width:100%; height:auto;border:none;"></iframe>
+            <!-- Airly Widget End -->
+        </div>
+    </div>
+</section>
 <!-- O nas -->
     <section class="container-fluid mb-lg-4" id="onasContentSection">
         <div class="row align-items-center">
-            <div class="col-lg-9 py-3 textBoxes border border-left-0">
+            <div class="col-lg-9 py-3 textBoxes">
                 <div class="row justify-content-center">
                     <div class="col-11 col-md-8 col-lg-10">
                         <!-- Card Title -->
                         <h1>O nas</h1>
                         <!-- Card Text -->
-                        <p class="text-dark text-justify">Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia corrupti dignissimos similique error repudiandae in nesciunt at officiis, obcaecati harum dolore quis accusamus reiciendis sunt delectus quam recusandae, sapiente veritatis. Temporibus in eveniet aut. Nam mollitia ducimus sint tenetur suscipit in fugiat omnis, dolorem expedita nobis numquam cum officia amet.
-                        <span id="onasDots">...</span>
-                        <span id="onasMore">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex, soluta.</span>
+                        <p class="text-dark">Witajcie!</p>
+                        <p class="text-dark">Stowarzyszenie Nasz Konstancin to inicjatywa mieszkańców zarówno niedawno osiadłych jak i tych z dziada pradziada, którym leży na sercu Konstancin-Jeziorna.
+                        <p>Naszym celem jest dążenie do zrównoważonego i harmonijnego rozwoju Gminy Konstancin-Jeziorna z uwzględnieniem jej uzdrowiskowego charakteru.</p>
+                        <span id="onasMore"><p>Chcielibyśmy Wam przedstawić główne zagadnienia, którymi nasze Stowarzyszenie będzie się zajmować w najbliższym czasie:
+                            <p>1. Uchwaleniem planów zagospodarowania przestrzennego zapobiegających paraliżowi Miasta i Gminy oraz przyjaznych dla obecnych i nowych mieszkańców,</p>
+                            <p>2. Poprawą jakości powietrza- chcemy, szczególnie w uzdrowisku, oddychać czystym powietrzem,</p>
+                            <p>3. Powstaniem targowiska na miarę naszego Miasta i Gminy.</p>
+                            <p>Dołącz do Nas i wspólnie zmieniajmy <br>Nasz Unikalny Konstancin</p>
+                            </p>
+                        </span>
                         </p>
                         <button onclick="onasReadMore()" type="button" id="onasBtn" class="btn btnReadMore">Pokaż więcej</button>
                     </div>
@@ -65,7 +88,7 @@
         <div class="row d-flex justify-content-center align-items-center">
             <div class="col-12 col-lg-6 col-xl-5 justify-content-center">
                 <div class="row justify-content-center">
-                    <div class="col-10 col-lg-9 col-xl-8 py-3 border textBoxes">
+                    <div class="col-12 col-lg-9 col-xl-8 py-3 textBoxes">
                         <div class="row justify-content-center">
                             <div class="col-11 col-md-8 col-lg-10 col-xl-11">
                                 <!-- Card Title -->
@@ -75,10 +98,7 @@
                                 <p class="text-dark"><i class="far fa-envelope"></i> E-mail: biuro@smkj.pl</p>
                                 <p class="text-dark"><i class="fas fa-phone-square"></i> +48 795 354 141</p>
                                 <p class="text-dark">
-                                <!-- <span id="kontaktDots">...</span> -->
-                                <!-- <span id="kontaktMore">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex, soluta.</span> -->
                                 </p>
-                                <button onclick="kontaktReadMore()" type="button" id="kontaktBtn" class="btn btnReadMore">Pokaż więcej</button>
                             </div>
                         </div>
                     </div>
@@ -87,17 +107,25 @@
                         <img src="smkj_logo.png" id="emblemLogo" class="d-lg-none" alt="Logo miniature">
                 </div>
             </div>
-            <div class="col-lg-6 col-xl-7 d-flex textBoxes border border-right-0 justify-content-center py-3">
-                <div class="row justify-content-center">
-                    <div class="col-11 col-md-8 col-lg-10">
+            <div class="col-12 col-md-12 col-lg-6 col-xl-7 textBoxes py-3">
+                <div class="row d-flex justify-content-center">
+                    <div class="col-11 col-md-8">
                         <!-- Card Title -->
                         <h1>Zarząd</h1>
                         <!-- Card Text -->
-                        <p class="text-dark text-justify">Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia corrupti dignissimos similique error repudiandae in nesciunt at officiis, obcaecati harum dolore quis accusamus reiciendis sunt delectus quam recusandae, sapiente veritatis. Temporibus in eveniet aut. Nam mollitia ducimus sint tenetur suscipit in fugiat omnis, dolorem expedita nobis numquam cum officia amet.
-                        <span id="zarzadDots">...</span>
-                        <span id="zarzadMore">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex, soluta.</span>
+                        <p class="text-dark" id="zarzadPodtytul">W skład zarządu wchodzą:</p>
+                        <p>
+                            <ul>
+                                <li>Sylwia Borowska-Kurek</li>
+                                <li>Marek Górski</li>
+                                <li>Michał Wiśniewski</li>
+                                <li>Mariusz Cięciara - <em>skarbnik</em></li>
+                                <li>Krzysztof Podsiadło - <em>sekretarz</em></li>
+                            </ul>   
+                        <!-- <span id="zarzadDots">...</span> -->
+                        <!-- <span id="zarzadMore">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex, soluta.</span> -->
                         </p>
-                        <button onclick="zarzadReadMore()" type="button" id="zarzadBtn" class="btn btnReadMore">Pokaż więcej</button>
+                        <!-- <button onclick="zarzadReadMore()" type="button" id="zarzadBtn" class="btn btnReadMore">Pokaż więcej</button> -->
                     </div>
                 </div>
             </div>
@@ -110,17 +138,19 @@
 <!-- Statut -->
     <section class="container-fluid mb-lg-4" id="statutContentSection">
         <div class="row align-items-center">
-            <div class="col-lg-9 py-3 textBoxes border border-right-0 order-1 order-lg-2">
+            <div class="col-lg-9 py-3 textBoxes order-1 order-lg-2">
                 <div class="row justify-content-center">
                     <div class="col-11 col-md-8 col-lg-10">
                         <!-- Card Title -->
                         <h1>Statut</h1>
                         <!-- Card Text -->
-                        <p class="text-dark text-justify">Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia corrupti dignissimos similique error repudiandae in nesciunt at officiis, obcaecati harum dolore quis accusamus reiciendis sunt delectus quam recusandae, sapiente veritatis. Temporibus in eveniet aut. Nam mollitia ducimus sint tenetur suscipit in fugiat omnis, dolorem expedita nobis numquam cum officia amet.
-                        <span id="statutDots">...</span>
-                        <span id="statutMore">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex, soluta.</span>
-                        </p>
-                        <button onclick="statutReadMore()" type="button" id="statutBtn" class="btn btnReadMore">Pokaż więcej</button>
+                        <p class="text-dark">Tutaj znajdziecie Państwo nasze cele, zadania i zasady funkcjonowania Stowarzyszenia.
+                        <!-- <span id="statutDots">...</span> -->
+                        <!-- <span id="statutMore">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex, soluta.</span> -->
+                        </p><br>
+                        <p class="text-dark">Cały statut w formacie PDF można wyświetlić, klikając w poniższy link.</p>
+                        <a class="btn btnReadMore" target="_blank" href="STATUT-Stowarzyszenia-Mieszkancow-Konstancina-Jeziorny_Nasz_Konstancin.pdf">Zobacz Statut w formie PDF</a>
+                        <!-- <button onclick="statutReadMore()" type="button" id="statutBtn" class="btn btnReadMore">Pokaż więcej</button> -->
                     </div>
                 </div>
             </div>
@@ -136,17 +166,38 @@
 <!-- Rada konsultacyjna -->
     <section class="container-fluid mb-lg-4" id="radaContentSection">
         <div class="row align-items-center justify-content-center">
-            <div class="col-sm-11 col-lg-20 py-3 border textBoxes">
+            <div class="col-sm-11 col-lg-20 py-3 textBoxes">
                 <div class="row justify-content-center">
                     <div class="col-11 col-md-8 col-lg-10">
                         <!-- Card Title -->
                         <h1>Rada konsultacyjna</h1>
                         <!-- Card Text -->
-                        <p class="text-dark text-justify">Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia corrupti dignissimos similique error repudiandae in nesciunt at officiis, obcaecati harum dolore quis accusamus reiciendis sunt delectus quam recusandae, sapiente veritatis. Temporibus in eveniet aut. Nam mollitia ducimus sint tenetur suscipit in fugiat omnis, dolorem expedita nobis numquam cum officia amet.
-                        <span id="radaDots">...</span>
-                        <span id="radaMore">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex, soluta.</span>
+                        <p class="text-dark">Niebawem więcej szczegółów.
+                        <!-- <span id="radaDots">...</span> -->
+                        <!-- <span id="radaMore">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex, soluta.</span> -->
                         </p>
-                        <button onclick="radaReadMore()" type="button" id="radaBtn" class="btn btnReadMore">Pokaż więcej</button>
+                        <!-- <button onclick="radaReadMore()" type="button" id="radaBtn" class="btn btnReadMore">Pokaż więcej</button> -->
+                    </div>
+                </div>
+            </div>
+            <div class="d-flex justify-content-center px-0">
+                <!-- Miniature logo at smaller viewports -->
+                <img src="smkj_logo.png" id="emblemLogo" class="d-lg-none" alt="Logo miniature">
+            </div>
+        </div>
+    </section>
+    <!-- Członkostwo -->
+    <section class="container-fluid mb-lg-4" id="czlonekContentSection">
+        <div class="row align-items-center justify-content-center">
+            <div class="col-sm-11 col-lg-20 py-3 textBoxes">
+                <div class="row justify-content-center">
+                    <div class="col-11 col-md-8 col-lg-10">
+                        <!-- Card Title -->
+                        <h1>Członkostwo</h1>
+                        <!-- Card Text -->
+                        <p class="text-dark">Wszystkich, którzy chcieliby do nas dołączyć zapraszamy do wypełnienia deklaracji i kontaktu mailowego.
+                        </p>
+                        <a class="btn btnReadMore" target="_blank" href="WZOR-Deklaracja_czlonkostwo_Stowarzyszenie.docx">Pobierz wzór deklaracji</a>
                     </div>
                 </div>
             </div>
@@ -157,7 +208,7 @@
         </div>
     </section>
 <!-- footer -->
-    <section class="container-fluid mt-lg-4 pb-5 pt-2" id="footerSection">
+    <section class="container-fluid mt-lg-4 pt-2" id="footerSection">
         <div class="row d-flex justify-content-start">
             <div class="col-md-6">
                 <img src="smkj_logo_footer.png" alt="SMKJ logo" class="img-fluid">
@@ -165,19 +216,29 @@
         </div>
         <div class="row d-flex justify-content-around">
             <div class="col-10 col-sm-5 col-md-4 footerText">
-                <p><a class="footerLink" onclick="topFunction()" href="#">Zabierz mnie na górę</a></p>
-                <p><a class="footerLink" href="https://www.facebook.com/pages/category/Non-Governmental-Organization--NGO-/Stowarzyszenie-Mieszka%C5%84c%C3%B3w-Konstancina-Jeziorny-Nasz-Konstancin-104018204784011/"><i class="fab fa-facebook-square"></i> Nasz Facebook</a></p>
-                <p><i class="far fa-envelope"></i> E-mail: biuro@smkj.pl</p>
-                <p><i class="fas fa-phone-square"></i> +48 795 354 141</p>
+                <ul class="list-unstyled">
+                <li class="mb-2"><a class="footerLink" href="https://www.facebook.com/pages/category/Non-Governmental-Organization--NGO-/Stowarzyszenie-Mieszka%C5%84c%C3%B3w-Konstancina-Jeziorny-Nasz-Konstancin-104018204784011/"><i class="fab fa-facebook-square"></i> Nasz Facebook</a></li>
+                <li class="mb-2"><i class="far fa-envelope"></i> E-mail: biuro@smkj.pl</li>
+                <li class="mb-2"><i class="fas fa-phone-square"></i> +48 795 354 141</li>
+                <li class="mb-2">NRB: 98 1240 1040 1111 0011 0234 0780</li>
+                <li class="mb-2">REGON: 387258164</li>
+                <li class="mb-2">NIP: 1231476766</li>
+                <li class="mb-2">KRS: 0000863677</li>
+                </ul>
             </div>
             <div class="col-10 col-sm-5 col-md-4 footerText"> 
-                <p><a class="footerLink" href="#" onclick="smoothScroll(document.getElementById('onasContentSection'))">O nas</a></p>
-                <p><a class="footerLink" href="#" onclick="smoothScroll(document.getElementById('kontaktContentSection'))">Kontakt</a></p>
-                <p><a class="footerLink" href="#" onclick="smoothScroll(document.getElementById('statutContentSection'))">Statut</a></p>
-                <p><a class="footerLink" href="#" onclick="smoothScroll(document.getElementById('zarzadContentSection'))">Zarząd</a></p>
-                <p><a class="footerLink" href="#" onclick="smoothScroll(document.getElementById('radaContentSection'))">Rada konsultacyjna</a></p>
+                <ul class="list-unstyled">
+                <li class="mb-2"><a class="footerLink" onclick="topFunction()" href="#">Zabierz mnie na górę</a></li>
+                <li class="mb-2"><a class="footerLink" href="#" onclick="smoothScroll(document.getElementById('onasContentSection'))">O nas</a></li>
+                <li class="mb-2"><a class="footerLink" href="#" onclick="smoothScroll(document.getElementById('kontaktContentSection'))">Kontakt</a></li>
+                <li class="mb-2"><a class="footerLink" href="#" onclick="smoothScroll(document.getElementById('statutContentSection'))">Statut</a></li>
+                <li class="mb-2"><a class="footerLink" href="#" onclick="smoothScroll(document.getElementById('zarzadContentSection'))">Zarząd</a></li>
+                <li class="mb-2"><a class="footerLink" href="#" onclick="smoothScroll(document.getElementById('radaContentSection'))">Rada konsultacyjna</a></li>
+                <li class="mb-2"><a class="footerLink" href="#" onclick="smoothScroll(document.getElementById('czlonekContentSection'))">Członkostwo</a></li>
+                </ul>
             </div>
         </div>
+        <div class="d-flex justify-content-center align-items-end footerText mb-0 pb-0 pt-5" id="authorNotice">Website by Kacper Bziuk &copy; 2020</div>
     </section>
 
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>

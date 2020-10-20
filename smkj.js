@@ -1,50 +1,37 @@
 //Read More button functions
-function ReadMoreToggle(dots, moreText, btnText) {
-    if (dots.style.display === "none") {
-        dots.style.display = "inline";
+function ReadMoreToggle(moreText, btnText) {
+    if (btnText.innerHTML === "Pokaż mniej") {
         btnText.innerHTML = "Pokaż więcej";
         moreText.style.display = "none";
       } else {
-        dots.style.display = "none";
         btnText.innerHTML = "Pokaż mniej";
         moreText.style.display = "inline";
       }
 }
 function onasReadMore() {
-    let dots = document.getElementById("onasDots");
     let moreText = document.getElementById("onasMore");
     let btnText = document.getElementById("onasBtn");
-
-    ReadMoreToggle(dots, moreText, btnText);
+    
+    ReadMoreToggle(moreText, btnText);
 }
-function kontaktReadMore() {
-    let dots = document.getElementById("kontaktDots");
-    let moreText = document.getElementById("kontaktMore");
-    let btnText = document.getElementById("kontaktBtn");
+// function statutReadMore() {
+//     let moreText = document.getElementById("statutMore");
+//     let btnText = document.getElementById("statutBtn");
 
-    ReadMoreToggle(dots, moreText, btnText);
-}
-function statutReadMore() {
-    let dots = document.getElementById("statutDots");
-    let moreText = document.getElementById("statutMore");
-    let btnText = document.getElementById("statutBtn");
+//     ReadMoreToggle(moreText, btnText);
+// }
+// function zarzadReadMore() {
+//     let moreText = document.getElementById("zarzadMore");
+//     let btnText = document.getElementById("zarzadBtn");
 
-    ReadMoreToggle(dots, moreText, btnText);
-}
-function zarzadReadMore() {
-    let dots = document.getElementById("zarzadDots");
-    let moreText = document.getElementById("zarzadMore");
-    let btnText = document.getElementById("zarzadBtn");
+//     ReadMoreToggle(moreText, btnText);
+// }
+// function radaReadMore() {
+//     let moreText = document.getElementById("radaMore");
+//     let btnText = document.getElementById("radaBtn");
 
-    ReadMoreToggle(dots, moreText, btnText);
-}
-function radaReadMore() {
-    let dots = document.getElementById("radaDots");
-    let moreText = document.getElementById("radaMore");
-    let btnText = document.getElementById("radaBtn");
-
-    ReadMoreToggle(dots, moreText, btnText);
-}
+//     ReadMoreToggle(moreText, btnText);
+// }
 
 //Scroll function
 window.smoothScroll = function(target) {
