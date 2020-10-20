@@ -11,7 +11,16 @@ nav {
 }
 
 .textBoxes {
-    background-color: #f1f4f6!important;
+    /* background-color: #f1f4f6!important; */
+    background-color: white;
+}
+
+#jakoscText {
+    font-weight: 600;
+}
+
+#onasMore {
+    display: none;
 }
 
 @media (min-width: 0px) {
@@ -44,25 +53,19 @@ h1 {
     color: white;
 }
 
-#onasMore {
-    display: none;
-}
-
-#kontaktMore {
-    display: none;
-}
-
 #statutMore {
     display: none;
 }
-
-#zarzadMore {
-    display: none;
+#zarzadPodtytul {
+    font-weight: 700;
 }
-
+/* #zarzadMore {
+    display: none;
+} */
+/* 
 #radaMore {
     display: none;
-}
+} */
 
 .kontaktLink {
     color: #343a40;
@@ -86,4 +89,7 @@ h1 {
 .footerLink:hover {
     text-decoration: underline;
     color: #eeeeeeb3;
+}
+#authorNotice {
+    font-size: 0.8rem;
 }
